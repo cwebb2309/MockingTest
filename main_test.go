@@ -21,5 +21,4 @@ func TestMockMethodWithArgs(t *testing.T) {
 	theMock.On("getBalance", "0000").Return(1000, 0)
 	res := queryBalance(theMock, "0000")
 	assert.Equal(t, 1000, res)
-	//theMock.AssertExpectations(t)
 }
